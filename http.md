@@ -1,14 +1,10 @@
 # HTTP
 
-## this is a test
+## Hypertext Transfer Protocol
 
 -----
 
 ## Up You Go
-
-Math Example:
-
-`$$ J(\theta_0,\theta_1) = \sum_{i=0}^{10} a_i $$`
 
 -----
 
