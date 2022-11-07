@@ -1,6 +1,6 @@
 # External Markdown
 
-## `<insert date here>`
+## `<insert test here>`
 
 -----
 
