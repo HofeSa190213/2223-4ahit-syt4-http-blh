@@ -99,7 +99,7 @@ Here's a typical HTTP request:
 
 -----
 
-## Status Code
+# Status Code
 
 client can interpret the server response, every response will have an status code
 
@@ -122,12 +122,60 @@ client can interpret the server response, every response will have an status cod
 
 -----
 
-## Image Examples
+# Tools to view HTTP Traffic
 
-### Link
+---
 
-![Github](https://pngimg.com/uploads/github/small/github_PNG67.png)
+- Chrome Webkit inspector: 
+  - Lot of information about HTTP response and request
+- web debugging proxies (Fiddler, Charles Proxy, OSX)
+- Command Line (curl, tcpdump, tshark)
+  - Used for monitoring the HTTP traffic
 
-### Local
+---
 
-![LiTec-Logo](./img/LiTec-Logo.jpg)
+## Chrome Webkit inspector
+
+![image](https://user-images.githubusercontent.com/71715472/200420405-4b142fee-517d-4d72-aea4-50867b1c61b9.png)
+
+---
+
+## Fiddler
+
+![image](https://user-images.githubusercontent.com/71715472/200420488-51076a64-de22-4ae4-afe9-4fe7f2a4c1cb.png)
+
+-----
+
+# Using HTTP in Web Frameworks and Libraries
+
+---
+
+- Express(Node.js)
+  - Provides simple API for writing web servers 
+
+![image](https://user-images.githubusercontent.com/71715472/200420682-c58f5e4b-203f-471b-a610-ea427c9bbd07.png)
+
+-----
+
+# Sending an HTTP Request With the Fetch API
+
+---
+
+- two methods: 
+  - jQuery
+  - modern browsers have built-in Fetch API
+
+---
+
+## GET Requests With Fetch
+
+**fetch(**"https://example.com/something.html"**)** --> returns a promise, which you can **await** to get a response
+
+![image](https://user-images.githubusercontent.com/71715472/200421153-a9b5d8c3-89c2-4f49-98ca-5b6fb1b8678e.png)
+
+---
+
+## POST Requests With Fetch
+**fetch(**'https://example.com/profile', {  method: 'POST'}**)** --> post data with an optional payload and returns a promise, which you can **await** to get a response
+
+![image](https://user-images.githubusercontent.com/71715472/200421581-44352c39-b5be-44ef-826d-8685fb31a8d6.png)
