@@ -2,14 +2,6 @@
 
 ## `<insert test here>`
 
------
-
-## 2nd page test
-
-look down for nothing special
-
-Note: just a short note
-
 ---
 
 ## Up You Go
