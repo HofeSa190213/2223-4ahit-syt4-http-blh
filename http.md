@@ -2,9 +2,16 @@
 
 ## Hypertext Transfer Protocol
 
+Laher Benedikt - Breuer Mario - Hofer Samuel
+
 -----
 
-## Up You Go
+## About HTTP
+
+---
+
+- Stateless application-layer protocol
+- 
 
 -----
 
