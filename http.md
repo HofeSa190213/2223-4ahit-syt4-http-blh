@@ -27,7 +27,7 @@ Laher Benedikt - Breuer Mario - Hofer Samuel
 
 # URL
 
-URLS identify the specific host the client wants to communicate with
+URLs identify the specific host the client wants to communicate with
 
 ---
 
@@ -51,18 +51,18 @@ URLS identify the specific host the client wants to communicate with
 
 Requests are made up of the following parts
 
-- Request line: says what’s being requested. Consist of a verb, a path, and the Http version
-- Headers: additional information about requester, message, communication format
-- Body: it is optional. The content of the request. Separated from the header by a blank line
+- **Request line**: says what’s being requested. Consist of a verb, a path, and the Http version
+- **Headers**: additional information about requester, message, communication format
+- **Body**: it is optional. The content of the request. Separated from the header by a blank line
 
 ---
 
 ## HTTP Request Methods
 
-- GET: fetch a resource from the server
-- POST: create a new resource
-- PUT: update an existing resource
-- DELETE: delete an existing resource
+- **GET**: fetch a resource from the server
+- **POST**: create a new resource
+- **PUT**: update an existing resource
+- **DELETE**: delete an existing resource
 
 ---
 
@@ -70,32 +70,33 @@ Requests are made up of the following parts
 
 give the server information about the sender
 
-- Chache-Control: directive, that controls the caching
-- Connection: decides, if the network connection should be open or closed
-- Trailer: tells the server, that it can append metadata
-- Transfer-encoding: determs the encoding of the data from the server
+- **Chache-Control**: directive, that controls the caching
+- **Connection**: decides, if the network connection should be open or closed
+- **Trailer**: tells the server, that it can append metadata
+- **Transfer-encoding**: determs the encoding of the data from the server
 
 ---
 
-Here's a typical HTTP request:
+Here's a typical HTTP request: 
+<br>
 ![image](https://user-images.githubusercontent.com/71715472/200413459-d7b69a3b-bad5-44b0-9496-a684d1739744.png)
 
 ---
 
 # Response
 
-- Status Line: tells us, if the request succeeded or not 
-- Headers: additional information about the response
-- Body: the content of the response
+- **Status Line**: tells us, if the request succeeded or not 
+- **Headers**: additional information about the response
+- **Body**: the content of the response
 
 ---
 
 ## Response Headers
 
-- Age: time, when the message was generated on the server
-- ETag: the MD5 hash to check for modification
-- Location: used when sending a redirection and contains the new URL
-- Server: identifies the server generating the message
+- **Age**: time, when the message was generated on the server
+- **ETag**: the MD5 hash to check for modification
+- **Location**: used when sending a redirection and contains the new URL
+- **Server**: identifies the server generating the message
 
 -----
 
@@ -107,17 +108,17 @@ client can interpret the server response, every response will have an status cod
 
 ## Type of status code
 
-- 1xx: Informational Messages
+- **1xx**: Informational Messages
   - Can send an Except
-- 2xx: Successful
+- **2xx**: Successful
   - Tells the client that it was successfully 
-- 3xx: Redirection
+- **3xx**: Redirection
   - 301 Moved Permanently: the resource is now located at a new URL   
   - 303 See Other: the resource is temporarily located at a new URL
   - 304 Not Modified: the server has determined that the resource has not changed and the client should use its cached copy 
-- 4xx: Client Error
+- **4xx**: Client Error
   - When server thinks it’s the fault of the client
-- 5xx: Server Error
+- **5xx**: Server Error
   - Used to indicate a server failure while processing the request
 
 -----
@@ -179,3 +180,10 @@ client can interpret the server response, every response will have an status cod
 **fetch(**'https://example.com/profile', {  method: 'POST'}**)** --> post data with an optional payload and returns a promise, which you can **await** to get a response
 
 ![image](https://user-images.githubusercontent.com/71715472/200421581-44352c39-b5be-44ef-826d-8685fb31a8d6.png)
+
+-----
+
+# SOURCES
+
+https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+https://developer.mozilla.org/en-US/docs/Web/HTTP
